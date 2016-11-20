@@ -1,0 +1,1043 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8136AABA1DD2AF5E00EF1857 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136AAB91DD2AF5E00EF1857 /* QuartzCore.framework */; };
+		8136AABC1DD2AF6500EF1857 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136AABB1DD2AF6500EF1857 /* ImageIO.framework */; };
+		8136AABE1DD2AF7B00EF1857 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136AABD1DD2AF7B00EF1857 /* CoreText.framework */; };
+		8136AAC01DD2AF8200EF1857 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136AABF1DD2AF8200EF1857 /* UIKit.framework */; };
+		8136AAC21DD2AF8900EF1857 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136AAC11DD2AF8900EF1857 /* Foundation.framework */; };
+		814455E71DCE3FC900678F56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 814455E61DCE3FC900678F56 /* main.m */; };
+		814455EA1DCE3FC900678F56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 814455E91DCE3FC900678F56 /* AppDelegate.m */; };
+		814455ED1DCE3FC900678F56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814455EC1DCE3FC900678F56 /* ViewController.m */; };
+		814455F01DCE3FC900678F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814455EE1DCE3FC900678F56 /* Main.storyboard */; };
+		814455F21DCE3FC900678F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814455F11DCE3FC900678F56 /* Assets.xcassets */; };
+		814455F51DCE3FC900678F56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814455F31DCE3FC900678F56 /* LaunchScreen.storyboard */; };
+		814456001DCE3FC900678F56 /* TTliveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814455FF1DCE3FC900678F56 /* TTliveTests.m */; };
+		8144560B1DCE3FC900678F56 /* TTliveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8144560A1DCE3FC900678F56 /* TTliveUITests.m */; };
+		8144561A1DCE412400678F56 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 814456181DCE412400678F56 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		8144561B1DCE412400678F56 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814456191DCE412400678F56 /* TencentOpenAPI.framework */; };
+		8144561E1DCE417D00678F56 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8144561D1DCE417D00678F56 /* Security.framework */; };
+		814456201DCE419800678F56 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8144561F1DCE419800678F56 /* libiconv.tbd */; };
+		814456221DCE41A000678F56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814456211DCE41A000678F56 /* SystemConfiguration.framework */; };
+		814456241DCE41A900678F56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814456231DCE41A900678F56 /* CoreGraphics.framework */; };
+		814456261DCE41B700678F56 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 814456251DCE41B700678F56 /* libsqlite3.tbd */; };
+		814456281DCE41C000678F56 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814456271DCE41C000678F56 /* CoreTelephony.framework */; };
+		8144562A1DCE41CA00678F56 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 814456291DCE41CA00678F56 /* libstdc++.tbd */; };
+		81AAC1AB1DE03BF700B3222F /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AAC1AA1DE03BF700B3222F /* TTMainViewController.m */; };
+		81AAC1AE1DE03DE900B3222F /* panelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AAC1AD1DE03DE900B3222F /* panelView.m */; };
+		81AAC1B11DE073D700B3222F /* TTLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AAC1B01DE073D700B3222F /* TTLiveViewController.m */; };
+		81AAC1B41DE073F600B3222F /* TTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AAC1B31DE073F600B3222F /* TTHomeViewController.m */; };
+		81AAC1BA1DE07AC800B3222F /* TTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AAC1B91DE07AC800B3222F /* TTMineViewController.m */; };
+		81AAC1BD1DE097F100B3222F /* TTVedioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AAC1BC1DE097F100B3222F /* TTVedioViewController.m */; };
+		81AAC1CC1DE1621C00B3222F /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81AAC1BF1DE1621C00B3222F /* libWeiboSDK.a */; };
+		81AAC1CD1DE1621C00B3222F /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 81AAC1C91DE1621C00B3222F /* WeiboSDK.bundle */; };
+		81F1B6451DD93CF300A35389 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8144562B1DCE41D300678F56 /* libz.tbd */; };
+		AC64C9AAB029C7287973E821 /* libPods-TTliveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE6F1DE4B8706278063CDC1 /* libPods-TTliveUITests.a */; };
+		EA17FAFDDD0F43775FFC8DC5 /* libPods-TTlive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE959B2CD36C0E4967EB8930 /* libPods-TTlive.a */; };
+		FF82603C9FE60C538634FCA4 /* libPods-TTliveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EBF32839A055D6CF25B13A /* libPods-TTliveTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		814455FC1DCE3FC900678F56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814455DA1DCE3FC800678F56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814455E11DCE3FC900678F56;
+			remoteInfo = TTlive;
+		};
+		814456071DCE3FC900678F56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814455DA1DCE3FC800678F56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814455E11DCE3FC900678F56;
+			remoteInfo = TTlive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E8D261251D60261A34A73A5 /* Pods-TTliveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTliveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTliveUITests/Pods-TTliveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D6DEAE396F4D193DC972A34 /* Pods-TTlive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTlive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTlive/Pods-TTlive.debug.xcconfig"; sourceTree = "<group>"; };
+		70EBF32839A055D6CF25B13A /* libPods-TTliveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTliveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CA8C62FDA32237ED18440B /* Pods-TTliveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTliveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTliveUITests/Pods-TTliveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C446C3AF89611ADE57AFBAA /* Pods-TTliveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTliveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTliveTests/Pods-TTliveTests.release.xcconfig"; sourceTree = "<group>"; };
+		8136AAB91DD2AF5E00EF1857 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8136AABB1DD2AF6500EF1857 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		8136AABD1DD2AF7B00EF1857 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		8136AABF1DD2AF8200EF1857 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8136AAC11DD2AF8900EF1857 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		814455E21DCE3FC900678F56 /* TTlive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTlive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814455E61DCE3FC900678F56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		814455E81DCE3FC900678F56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		814455E91DCE3FC900678F56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		814455EB1DCE3FC900678F56 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		814455EC1DCE3FC900678F56 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		814455EF1DCE3FC900678F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		814455F11DCE3FC900678F56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814455F41DCE3FC900678F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		814455F61DCE3FC900678F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814455FB1DCE3FC900678F56 /* TTliveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTliveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		814455FF1DCE3FC900678F56 /* TTliveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTliveTests.m; sourceTree = "<group>"; };
+		814456011DCE3FC900678F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814456061DCE3FC900678F56 /* TTliveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTliveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8144560A1DCE3FC900678F56 /* TTliveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTliveUITests.m; sourceTree = "<group>"; };
+		8144560C1DCE3FC900678F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814456181DCE412400678F56 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		814456191DCE412400678F56 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		8144561D1DCE417D00678F56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8144561F1DCE419800678F56 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		814456211DCE41A000678F56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		814456231DCE41A900678F56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		814456251DCE41B700678F56 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		814456271DCE41C000678F56 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		814456291DCE41CA00678F56 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		8144562B1DCE41D300678F56 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		81AAC1A91DE03BF700B3222F /* TTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMainViewController.h; sourceTree = "<group>"; };
+		81AAC1AA1DE03BF700B3222F /* TTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
+		81AAC1AC1DE03DE900B3222F /* panelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panelView.h; sourceTree = "<group>"; };
+		81AAC1AD1DE03DE900B3222F /* panelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = panelView.m; sourceTree = "<group>"; };
+		81AAC1AF1DE073D700B3222F /* TTLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLiveViewController.h; sourceTree = "<group>"; };
+		81AAC1B01DE073D700B3222F /* TTLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLiveViewController.m; sourceTree = "<group>"; };
+		81AAC1B21DE073F600B3222F /* TTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHomeViewController.h; sourceTree = "<group>"; };
+		81AAC1B31DE073F600B3222F /* TTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHomeViewController.m; sourceTree = "<group>"; };
+		81AAC1B81DE07AC800B3222F /* TTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMineViewController.h; sourceTree = "<group>"; };
+		81AAC1B91DE07AC800B3222F /* TTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMineViewController.m; sourceTree = "<group>"; };
+		81AAC1BB1DE097F100B3222F /* TTVedioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVedioViewController.h; sourceTree = "<group>"; };
+		81AAC1BC1DE097F100B3222F /* TTVedioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVedioViewController.m; sourceTree = "<group>"; };
+		81AAC1BF1DE1621C00B3222F /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		81AAC1C01DE1621C00B3222F /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		81AAC1C11DE1621C00B3222F /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		81AAC1C21DE1621C00B3222F /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		81AAC1C31DE1621C00B3222F /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		81AAC1C41DE1621C00B3222F /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		81AAC1C51DE1621C00B3222F /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		81AAC1C61DE1621C00B3222F /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		81AAC1C71DE1621C00B3222F /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		81AAC1C81DE1621C00B3222F /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
+		81AAC1C91DE1621C00B3222F /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		81AAC1CA1DE1621C00B3222F /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		81AAC1CB1DE1621C00B3222F /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		81F1B6431DD93C8F00A35389 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		81F791AE1DD8AC3C00564394 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		C44853F9AD0A3676838D583A /* Pods-TTlive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTlive.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTlive/Pods-TTlive.release.xcconfig"; sourceTree = "<group>"; };
+		D5C8635454059406648879FC /* Pods-TTliveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTliveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTliveTests/Pods-TTliveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBE6F1DE4B8706278063CDC1 /* libPods-TTliveUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTliveUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE959B2CD36C0E4967EB8930 /* libPods-TTlive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTlive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814455DF1DCE3FC900678F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F1B6451DD93CF300A35389 /* libz.tbd in Frameworks */,
+				814456241DCE41A900678F56 /* CoreGraphics.framework in Frameworks */,
+				8136AAC21DD2AF8900EF1857 /* Foundation.framework in Frameworks */,
+				8136AAC01DD2AF8200EF1857 /* UIKit.framework in Frameworks */,
+				8136AABE1DD2AF7B00EF1857 /* CoreText.framework in Frameworks */,
+				814456281DCE41C000678F56 /* CoreTelephony.framework in Frameworks */,
+				8136AABC1DD2AF6500EF1857 /* ImageIO.framework in Frameworks */,
+				8136AABA1DD2AF5E00EF1857 /* QuartzCore.framework in Frameworks */,
+				8144562A1DCE41CA00678F56 /* libstdc++.tbd in Frameworks */,
+				814456261DCE41B700678F56 /* libsqlite3.tbd in Frameworks */,
+				814456221DCE41A000678F56 /* SystemConfiguration.framework in Frameworks */,
+				81AAC1CC1DE1621C00B3222F /* libWeiboSDK.a in Frameworks */,
+				814456201DCE419800678F56 /* libiconv.tbd in Frameworks */,
+				8144561E1DCE417D00678F56 /* Security.framework in Frameworks */,
+				8144561B1DCE412400678F56 /* TencentOpenAPI.framework in Frameworks */,
+				EA17FAFDDD0F43775FFC8DC5 /* libPods-TTlive.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814455F81DCE3FC900678F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF82603C9FE60C538634FCA4 /* libPods-TTliveTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814456031DCE3FC900678F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC64C9AAB029C7287973E821 /* libPods-TTliveUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EFF500A305D12F80811D401 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D6DEAE396F4D193DC972A34 /* Pods-TTlive.debug.xcconfig */,
+				C44853F9AD0A3676838D583A /* Pods-TTlive.release.xcconfig */,
+				D5C8635454059406648879FC /* Pods-TTliveTests.debug.xcconfig */,
+				7C446C3AF89611ADE57AFBAA /* Pods-TTliveTests.release.xcconfig */,
+				1E8D261251D60261A34A73A5 /* Pods-TTliveUITests.debug.xcconfig */,
+				71CA8C62FDA32237ED18440B /* Pods-TTliveUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		814455D91DCE3FC800678F56 = {
+			isa = PBXGroup;
+			children = (
+				814455E41DCE3FC900678F56 /* TTlive */,
+				814455FE1DCE3FC900678F56 /* TTliveTests */,
+				814456091DCE3FC900678F56 /* TTliveUITests */,
+				814455E31DCE3FC900678F56 /* Products */,
+				8144561C1DCE417D00678F56 /* Frameworks */,
+				0EFF500A305D12F80811D401 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		814455E31DCE3FC900678F56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814455E21DCE3FC900678F56 /* TTlive.app */,
+				814455FB1DCE3FC900678F56 /* TTliveTests.xctest */,
+				814456061DCE3FC900678F56 /* TTliveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814455E41DCE3FC900678F56 /* TTlive */ = {
+			isa = PBXGroup;
+			children = (
+				814455E81DCE3FC900678F56 /* AppDelegate.h */,
+				814455E91DCE3FC900678F56 /* AppDelegate.m */,
+				81AAC1931DE03B0F00B3222F /* classes */,
+				814455EB1DCE3FC900678F56 /* ViewController.h */,
+				814455EC1DCE3FC900678F56 /* ViewController.m */,
+				81F791A81DD88D1300564394 /* other */,
+				81AAC1BE1DE1621C00B3222F /* libWeiboSDK */,
+				814455E51DCE3FC900678F56 /* Supporting Files */,
+			);
+			path = TTlive;
+			sourceTree = "<group>";
+		};
+		814455E51DCE3FC900678F56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				814455E61DCE3FC900678F56 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		814455FE1DCE3FC900678F56 /* TTliveTests */ = {
+			isa = PBXGroup;
+			children = (
+				814455FF1DCE3FC900678F56 /* TTliveTests.m */,
+				814456011DCE3FC900678F56 /* Info.plist */,
+			);
+			path = TTliveTests;
+			sourceTree = "<group>";
+		};
+		814456091DCE3FC900678F56 /* TTliveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8144560A1DCE3FC900678F56 /* TTliveUITests.m */,
+				8144560C1DCE3FC900678F56 /* Info.plist */,
+			);
+			path = TTliveUITests;
+			sourceTree = "<group>";
+		};
+		8144561C1DCE417D00678F56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				814456181DCE412400678F56 /* TencentOpenApi_IOS_Bundle.bundle */,
+				814456191DCE412400678F56 /* TencentOpenAPI.framework */,
+				81F1B6431DD93C8F00A35389 /* libicucore.tbd */,
+				81F791AE1DD8AC3C00564394 /* libWeiboSDK.a */,
+				8136AAC11DD2AF8900EF1857 /* Foundation.framework */,
+				8136AABF1DD2AF8200EF1857 /* UIKit.framework */,
+				8136AABD1DD2AF7B00EF1857 /* CoreText.framework */,
+				8136AABB1DD2AF6500EF1857 /* ImageIO.framework */,
+				8136AAB91DD2AF5E00EF1857 /* QuartzCore.framework */,
+				8144562B1DCE41D300678F56 /* libz.tbd */,
+				814456291DCE41CA00678F56 /* libstdc++.tbd */,
+				814456271DCE41C000678F56 /* CoreTelephony.framework */,
+				814456251DCE41B700678F56 /* libsqlite3.tbd */,
+				814456231DCE41A900678F56 /* CoreGraphics.framework */,
+				814456211DCE41A000678F56 /* SystemConfiguration.framework */,
+				8144561F1DCE419800678F56 /* libiconv.tbd */,
+				8144561D1DCE417D00678F56 /* Security.framework */,
+				FE959B2CD36C0E4967EB8930 /* libPods-TTlive.a */,
+				70EBF32839A055D6CF25B13A /* libPods-TTliveTests.a */,
+				DBE6F1DE4B8706278063CDC1 /* libPods-TTliveUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81AAC1931DE03B0F00B3222F /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1981DE03B0F00B3222F /* Home */,
+				81AAC19C1DE03B0F00B3222F /* Live */,
+				81AAC1941DE03B0F00B3222F /* MY */,
+				81AAC1A01DE03B0F00B3222F /* Main */,
+				81AAC1A61DE03B0F00B3222F /* Profile */,
+				81AAC1A71DE03B0F00B3222F /* Tools */,
+			);
+			path = classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		81AAC1941DE03B0F00B3222F /* MY */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1951DE03B0F00B3222F /* Controller */,
+				81AAC1961DE03B0F00B3222F /* Model */,
+				81AAC1971DE03B0F00B3222F /* View */,
+			);
+			name = MY;
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		81AAC1951DE03B0F00B3222F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1B81DE07AC800B3222F /* TTMineViewController.h */,
+				81AAC1B91DE07AC800B3222F /* TTMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81AAC1961DE03B0F00B3222F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81AAC1971DE03B0F00B3222F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81AAC1981DE03B0F00B3222F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1991DE03B0F00B3222F /* Controller */,
+				81AAC19A1DE03B0F00B3222F /* Model */,
+				81AAC19B1DE03B0F00B3222F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		81AAC1991DE03B0F00B3222F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1B21DE073F600B3222F /* TTHomeViewController.h */,
+				81AAC1B31DE073F600B3222F /* TTHomeViewController.m */,
+				81AAC1BB1DE097F100B3222F /* TTVedioViewController.h */,
+				81AAC1BC1DE097F100B3222F /* TTVedioViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81AAC19A1DE03B0F00B3222F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81AAC19B1DE03B0F00B3222F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81AAC19C1DE03B0F00B3222F /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC19D1DE03B0F00B3222F /* Controller */,
+				81AAC19E1DE03B0F00B3222F /* Model */,
+				81AAC19F1DE03B0F00B3222F /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		81AAC19D1DE03B0F00B3222F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1AF1DE073D700B3222F /* TTLiveViewController.h */,
+				81AAC1B01DE073D700B3222F /* TTLiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81AAC19E1DE03B0F00B3222F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81AAC19F1DE03B0F00B3222F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81AAC1A01DE03B0F00B3222F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1A11DE03B0F00B3222F /* Controller */,
+				81AAC1A41DE03B0F00B3222F /* Model */,
+				81AAC1A51DE03B0F00B3222F /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		81AAC1A11DE03B0F00B3222F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1A91DE03BF700B3222F /* TTMainViewController.h */,
+				81AAC1AA1DE03BF700B3222F /* TTMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81AAC1A41DE03B0F00B3222F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81AAC1A51DE03B0F00B3222F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1AC1DE03DE900B3222F /* panelView.h */,
+				81AAC1AD1DE03DE900B3222F /* panelView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81AAC1A61DE03B0F00B3222F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		81AAC1A71DE03B0F00B3222F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		81AAC1BE1DE1621C00B3222F /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				81AAC1BF1DE1621C00B3222F /* libWeiboSDK.a */,
+				81AAC1C01DE1621C00B3222F /* WBHttpRequest+WeiboGame.h */,
+				81AAC1C11DE1621C00B3222F /* WBHttpRequest+WeiboShare.h */,
+				81AAC1C21DE1621C00B3222F /* WBHttpRequest+WeiboToken.h */,
+				81AAC1C31DE1621C00B3222F /* WBHttpRequest+WeiboUser.h */,
+				81AAC1C41DE1621C00B3222F /* WBHttpRequest.h */,
+				81AAC1C51DE1621C00B3222F /* WBSDKBasicButton.h */,
+				81AAC1C61DE1621C00B3222F /* WBSDKCommentButton.h */,
+				81AAC1C71DE1621C00B3222F /* WBSDKRelationshipButton.h */,
+				81AAC1C81DE1621C00B3222F /* WeiboSDK+Statistics.h */,
+				81AAC1C91DE1621C00B3222F /* WeiboSDK.bundle */,
+				81AAC1CA1DE1621C00B3222F /* WeiboSDK.h */,
+				81AAC1CB1DE1621C00B3222F /* WeiboUser.h */,
+			);
+			path = libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		81F791A81DD88D1300564394 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				814455F11DCE3FC900678F56 /* Assets.xcassets */,
+				814455F61DCE3FC900678F56 /* Info.plist */,
+				814455F31DCE3FC900678F56 /* LaunchScreen.storyboard */,
+				814455EE1DCE3FC900678F56 /* Main.storyboard */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814455E11DCE3FC900678F56 /* TTlive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8144560F1DCE3FC900678F56 /* Build configuration list for PBXNativeTarget "TTlive" */;
+			buildPhases = (
+				C51212192BF4C95296DF6ECD /* 📦 Check Pods Manifest.lock */,
+				814455DE1DCE3FC900678F56 /* Sources */,
+				814455DF1DCE3FC900678F56 /* Frameworks */,
+				814455E01DCE3FC900678F56 /* Resources */,
+				470D27AD8C90FE3FB7092787 /* 📦 Embed Pods Frameworks */,
+				2175A7C1C50E2AA6EF8CA8FC /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTlive;
+			productName = TTlive;
+			productReference = 814455E21DCE3FC900678F56 /* TTlive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		814455FA1DCE3FC900678F56 /* TTliveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814456121DCE3FC900678F56 /* Build configuration list for PBXNativeTarget "TTliveTests" */;
+			buildPhases = (
+				184D8880A2EAF3517E19B626 /* 📦 Check Pods Manifest.lock */,
+				814455F71DCE3FC900678F56 /* Sources */,
+				814455F81DCE3FC900678F56 /* Frameworks */,
+				814455F91DCE3FC900678F56 /* Resources */,
+				C5AF43AF3A8FADB828B325D4 /* 📦 Embed Pods Frameworks */,
+				3BC041375DFBCD121B7B8120 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814455FD1DCE3FC900678F56 /* PBXTargetDependency */,
+			);
+			name = TTliveTests;
+			productName = TTliveTests;
+			productReference = 814455FB1DCE3FC900678F56 /* TTliveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		814456051DCE3FC900678F56 /* TTliveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814456151DCE3FC900678F56 /* Build configuration list for PBXNativeTarget "TTliveUITests" */;
+			buildPhases = (
+				F2D397803FBEEA473A764F20 /* 📦 Check Pods Manifest.lock */,
+				814456021DCE3FC900678F56 /* Sources */,
+				814456031DCE3FC900678F56 /* Frameworks */,
+				814456041DCE3FC900678F56 /* Resources */,
+				B082878B62B51A6FDCF3810C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814456081DCE3FC900678F56 /* PBXTargetDependency */,
+			);
+			name = TTliveUITests;
+			productName = TTliveUITests;
+			productReference = 814456061DCE3FC900678F56 /* TTliveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814455DA1DCE3FC800678F56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TT;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = jiguang;
+				TargetAttributes = {
+					814455E11DCE3FC900678F56 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UHCLK74DHB;
+						ProvisioningStyle = Automatic;
+					};
+					814455FA1DCE3FC900678F56 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 814455E11DCE3FC900678F56;
+					};
+					814456051DCE3FC900678F56 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 814455E11DCE3FC900678F56;
+					};
+				};
+			};
+			buildConfigurationList = 814455DD1DCE3FC800678F56 /* Build configuration list for PBXProject "TTlive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 814455D91DCE3FC800678F56;
+			productRefGroup = 814455E31DCE3FC900678F56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814455E11DCE3FC900678F56 /* TTlive */,
+				814455FA1DCE3FC900678F56 /* TTliveTests */,
+				814456051DCE3FC900678F56 /* TTliveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814455E01DCE3FC900678F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8144561A1DCE412400678F56 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				814455F51DCE3FC900678F56 /* LaunchScreen.storyboard in Resources */,
+				81AAC1CD1DE1621C00B3222F /* WeiboSDK.bundle in Resources */,
+				814455F21DCE3FC900678F56 /* Assets.xcassets in Resources */,
+				814455F01DCE3FC900678F56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814455F91DCE3FC900678F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814456041DCE3FC900678F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		184D8880A2EAF3517E19B626 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2175A7C1C50E2AA6EF8CA8FC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTlive/Pods-TTlive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BC041375DFBCD121B7B8120 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTliveTests/Pods-TTliveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		470D27AD8C90FE3FB7092787 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTlive/Pods-TTlive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B082878B62B51A6FDCF3810C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTliveUITests/Pods-TTliveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51212192BF4C95296DF6ECD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5AF43AF3A8FADB828B325D4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTliveTests/Pods-TTliveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2D397803FBEEA473A764F20 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814455DE1DCE3FC900678F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AAC1B41DE073F600B3222F /* TTHomeViewController.m in Sources */,
+				814455ED1DCE3FC900678F56 /* ViewController.m in Sources */,
+				81AAC1AB1DE03BF700B3222F /* TTMainViewController.m in Sources */,
+				814455EA1DCE3FC900678F56 /* AppDelegate.m in Sources */,
+				81AAC1BA1DE07AC800B3222F /* TTMineViewController.m in Sources */,
+				814455E71DCE3FC900678F56 /* main.m in Sources */,
+				81AAC1AE1DE03DE900B3222F /* panelView.m in Sources */,
+				81AAC1B11DE073D700B3222F /* TTLiveViewController.m in Sources */,
+				81AAC1BD1DE097F100B3222F /* TTVedioViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814455F71DCE3FC900678F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814456001DCE3FC900678F56 /* TTliveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814456021DCE3FC900678F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8144560B1DCE3FC900678F56 /* TTliveUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		814455FD1DCE3FC900678F56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814455E11DCE3FC900678F56 /* TTlive */;
+			targetProxy = 814455FC1DCE3FC900678F56 /* PBXContainerItemProxy */;
+		};
+		814456081DCE3FC900678F56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814455E11DCE3FC900678F56 /* TTlive */;
+			targetProxy = 814456071DCE3FC900678F56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		814455EE1DCE3FC900678F56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814455EF1DCE3FC900678F56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		814455F31DCE3FC900678F56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814455F41DCE3FC900678F56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8144560D1DCE3FC900678F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8144560E1DCE3FC900678F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814456101DCE3FC900678F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6DEAE396F4D193DC972A34 /* Pods-TTlive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UHCLK74DHB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TTlive/ijkplayer",
+				);
+				INFOPLIST_FILE = TTlive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTlive/libWeiboSDK",
+					"$(PROJECT_DIR)/TTlive/ijkplayer",
+				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jg.TTlive.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		814456111DCE3FC900678F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44853F9AD0A3676838D583A /* Pods-TTlive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UHCLK74DHB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TTlive/ijkplayer",
+				);
+				INFOPLIST_FILE = TTlive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTlive/libWeiboSDK",
+					"$(PROJECT_DIR)/TTlive/ijkplayer",
+				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jg.TTlive.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		814456131DCE3FC900678F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C8635454059406648879FC /* Pods-TTliveTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TTliveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.TTliveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTlive.app/TTlive";
+			};
+			name = Debug;
+		};
+		814456141DCE3FC900678F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C446C3AF89611ADE57AFBAA /* Pods-TTliveTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TTliveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.TTliveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTlive.app/TTlive";
+			};
+			name = Release;
+		};
+		814456161DCE3FC900678F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8D261251D60261A34A73A5 /* Pods-TTliveUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TTliveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.TTliveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TTlive;
+			};
+			name = Debug;
+		};
+		814456171DCE3FC900678F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CA8C62FDA32237ED18440B /* Pods-TTliveUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TTliveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.TTliveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TTlive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814455DD1DCE3FC800678F56 /* Build configuration list for PBXProject "TTlive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8144560D1DCE3FC900678F56 /* Debug */,
+				8144560E1DCE3FC900678F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8144560F1DCE3FC900678F56 /* Build configuration list for PBXNativeTarget "TTlive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814456101DCE3FC900678F56 /* Debug */,
+				814456111DCE3FC900678F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814456121DCE3FC900678F56 /* Build configuration list for PBXNativeTarget "TTliveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814456131DCE3FC900678F56 /* Debug */,
+				814456141DCE3FC900678F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814456151DCE3FC900678F56 /* Build configuration list for PBXNativeTarget "TTliveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814456161DCE3FC900678F56 /* Debug */,
+				814456171DCE3FC900678F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 814455DA1DCE3FC800678F56 /* Project object */;
+}
